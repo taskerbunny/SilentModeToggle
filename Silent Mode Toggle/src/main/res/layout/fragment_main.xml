@@ -25,7 +25,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/phone_on"
-        android:contentDescription="Description here" />
+        android:contentDescription="@string/phone_icon_desc" />
+
+    <Button
+        android:id="@+id/toggleButton"
 
 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Toggle Silent Mode" />
 </RelativeLayout>
