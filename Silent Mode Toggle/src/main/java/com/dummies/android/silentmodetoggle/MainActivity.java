@@ -88,8 +88,27 @@ public class MainActivity extends Activity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            /*
+            //Toggle button - attach handler in the fragment?
+            Button b = (Button) rootView.findViewById(R.id.toggleButton);
+            b.setOnClickListener(this);
+            */
+
+            //
             return rootView;
         }
+        /*
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.toggleButton:
+
+                    Log.w("myApp", "button pushed!");
+
+                    break;
+            }
+        }
+        */
     }
 
 }
