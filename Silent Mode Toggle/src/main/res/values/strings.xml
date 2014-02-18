@@ -5,5 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <string name="phone_icon_desc">Phone Icon Description Here</string>
+    <string name="draw_phone_icon_desc">Phone Icon Description Here</string>
+
+    <string name="btn_toggle">Toggle Silent Mode</string>
 </resources>

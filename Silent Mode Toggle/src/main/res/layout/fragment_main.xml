@@ -8,6 +8,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.dummies.android.silentmodetoggle.MainActivity$PlaceholderFragment">
 
+    <!--
     <TextView
         android:text="@string/hello_world"
 
@@ -15,6 +16,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    -->
 
     <ImageView
         android:id="@+id/phone_icon"
@@ -24,8 +26,9 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:src="@drawable/phone_on"
-        android:contentDescription="@string/phone_icon_desc" />
+        android:contentDescription="@string/draw_phone_icon_desc" />
 
     <Button
         android:id="@+id/toggleButton"
@@ -34,5 +37,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="Toggle Silent Mode" />
+        android:text="@string/btn_toggle" />
 </RelativeLayout>
