@@ -4,12 +4,14 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.Button;
 
 public class MainActivity extends Activity {
 
@@ -23,6 +25,33 @@ public class MainActivity extends Activity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+
+        //setButtonClickListener();
+        /*
+        //
+        Button toggleButton = (Button)findViewById(R.id.toggleButton);
+        toggleButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+            }
+        });
+        */
+    }
+
+    /*
+    private void setButtonClickListen/er() {
+        Button toggleButton = (Button)findViewById(R.id.toggleButton);
+        toggleButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.w("myApp", "button pushed!");
+            }
+        });
+    }
+    */
+
+    /** Called when the user clicks the toggle button */
+    public void hndlr_toggleButton(View view) {
+        // Do something in response to button
+        Log.w("myApp", "button pushed!");
     }
 
 
@@ -52,6 +81,7 @@ public class MainActivity extends Activity {
     public static class PlaceholderFragment extends Fragment {
 
         public PlaceholderFragment() {
+
         }
 
         @Override
