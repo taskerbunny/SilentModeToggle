@@ -25,30 +25,9 @@ public class MainActivity extends Activity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
-
-        //setButtonClickListener();
-        /*
-        //
-        Button toggleButton = (Button)findViewById(R.id.toggleButton);
-        toggleButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-            }
-        });
-        */
     }
 
-    /*
-    private void setButtonClickListen/er() {
-        Button toggleButton = (Button)findViewById(R.id.toggleButton);
-        toggleButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.w("myApp", "button pushed!");
-            }
-        });
-    }
-    */
-
-    /** Called when the user clicks the toggle button */
+    /** XML event handler - Called when the user clicks the toggle button */
     public void hndlr_toggleButton(View view) {
         // Do something in response to button
         Log.w("myApp", "button pushed!");
@@ -92,8 +71,8 @@ public class MainActivity extends Activity {
             //Toggle button - attach handler in the fragment?
             Button btnToggle = (Button) rootView.findViewById(R.id.toggleButton);
             btnToggle.setOnClickListener(new View.OnClickListener() {
+                @Override
                 public void onClick(View v) {
-                    // button 1 was clicked!
                     Log.w("myApp", "pushed!");
                 }
             });
