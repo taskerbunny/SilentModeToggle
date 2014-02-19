@@ -68,7 +68,12 @@ public class MainActivity extends Activity {
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-            //Toggle button - attach handler in the fragment?
+            //**** Toggle button - attach handler in the fragment? ****//
+
+            //Method handler
+            setButtonClickListener(rootView);
+
+            /* Inline handler
             Button btnToggle = (Button) rootView.findViewById(R.id.toggleButton);
             btnToggle.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -76,9 +81,23 @@ public class MainActivity extends Activity {
                     Log.w("myApp", "pushed!");
                 }
             });
+            */
 
             //
             return rootView;
+        }
+
+        private void setButtonClickListener(View v) {
+            Button toggleButton;
+            toggleButton = (Button)v.findViewById(R.id.toggleButton);
+            Log.w("myApp", toggleButton.toString());
+
+            toggleButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Log.w("myApp", "pushed!");
+                }
+            });
+
         }
 
     }
